@@ -1,0 +1,7 @@
+FROM nidaraonline/iot-deps:0.1
+
+WORKDIR /app
+
+COPY *.py ./
+
+ENTRYPOINT [ "python", "main.py" ]
