@@ -77,7 +77,7 @@ if __name__ == '__main__':
 
     # Create the IoT Edge connection.
     hub = hubmanager.HubManager()
-    hub.client.set_device_twin_callback(device_twin_callback, 0)
+    hub.client.set_module_twin_callback(device_twin_callback, 0)
 
     # Create the camera object and start camera stream.
     camera = picamera.PiCamera()

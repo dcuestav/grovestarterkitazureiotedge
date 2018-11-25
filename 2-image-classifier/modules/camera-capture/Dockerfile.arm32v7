@@ -1,4 +1,4 @@
-FROM microsoft/azureiotedge-seeed-camera-capture:1.0-deps-arm32v7
+FROM nidaraonline/iot-deps:0.1
 
 WORKDIR /app
 

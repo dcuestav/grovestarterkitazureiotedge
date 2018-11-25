@@ -1,4 +1,7 @@
-FROM microsoft/azureiotedge-seeed-image-classifier-python:1.0-deps-arm32v7
+FROM nidaraonline/iot-deps:0.1
+
+# RUN pip install http://ci.tensorflow.org/view/Nightly/job/nightly-pi/238/artifact/output-artifacts/tensorflow-1.7.0-cp27-none-any.whl
+RUN pip install tensorflow==1.8.0
 
 WORKDIR /app
 
